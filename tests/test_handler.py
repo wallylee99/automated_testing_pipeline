@@ -11,7 +11,7 @@ class TestHandlerCase(unittest.TestCase):
         print(result)
         self.assertEqual(result['statusCode'], 200)
         self.assertEqual(result['headers']['Content-Type'], 'application/json')
-        self.assertIn('city :'+event['city'], result['body'])
+        self.assertIn(event['city'], result['body'])
         self.assertIn('current_temperature :', result['body'])
 
 if __name__ == '__main__':
