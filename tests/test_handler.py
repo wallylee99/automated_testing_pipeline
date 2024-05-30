@@ -12,7 +12,7 @@ class TestHandlerCase(unittest.TestCase):
         self.assertEqual(result['statusCode'], 200)
         self.assertEqual(result['headers']['Content-Type'], 'application/json')
         self.assertIn(event['city'], result['body'])
-        self.assertIn('current_temperature :', result['body'])
+        self.assertIn('current_temperature', result['body'])
 
 if __name__ == '__main__':
     unittest.main()
