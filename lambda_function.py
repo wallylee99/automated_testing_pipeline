@@ -25,7 +25,8 @@ def lambda_handler(event, context):
             'body': json.dumps({
                 'city': city,
                 'current_temperature': current_temp
-            })
+            }),
+            'headers': {'Content-Type': 'application/json'}
         }
     except Exception as e:
         return {
