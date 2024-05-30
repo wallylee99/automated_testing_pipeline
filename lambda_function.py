@@ -5,9 +5,9 @@ import os
 def lambda_handler(event, context):
     try:        
         city = event['city']
-        api_key = os.environ['api_key']
-        url = f'http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric'
+        url = f'http://api.openweathermap.org/data/2.5/weather?q={city}&appid=ccaf7a577ae596e079e9a0ed04af6b10&units=metric'
         
+    
         http = urllib3.PoolManager()
         response = http.request('GET', url)
         data = json.loads(response.data.decode('utf-8'))        

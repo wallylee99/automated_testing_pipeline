@@ -5,6 +5,8 @@ phases:
       python: 3.10
   build:
     commands:
+      - echo Build started on `date`
+      - echo Testing the Python code...
       - python -m unittest discover tests
 artifacts:
   files:
