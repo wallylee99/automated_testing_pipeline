@@ -24,7 +24,8 @@ def lambda_handler(event, context):
             'statusCode': 200,
             'body': json.dumps({
                 'city': city,
-                'current_temperature': current_temp
+                'current_temperature': current_temp,
+                'test': 'hello' 
             }),
             'headers': {'Content-Type': 'application/json'} 
         }
