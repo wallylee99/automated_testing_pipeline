@@ -238,7 +238,7 @@ artifacts:
 <p>With the CodePipeline set up, push a change to the GitHub repository to see the pipeline in action.</p>
 <p><img src="https://www.wallacel.com/wp-content/uploads/2024/05/codepipeline-699x1024.png" alt=""></p>
 <p><img src="https://www.wallacel.com/wp-content/uploads/2024/05/Screenshot-2024-05-31-at-22.58.03.png" alt=""></p>
-<p>Once the pipeline executes, go to the Lambda console to verify if the Lambda function has been created successfully.</p>
+<p>Once the pipeline executes, go to the Lambda console to verify if the Lambda function has been created successfully</p>
 <p><img src="https://www.wallacel.com/wp-content/uploads/2024/05/Screenshot-2024-05-31-at-22.59.23.png" alt=""></p>
 </div>
 </body>
